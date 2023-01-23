@@ -6,16 +6,20 @@
 }
 html {
     font-size: 63.5%;
+    scroll-snap-type: y mandatory;
     
 }
 body {
     font-size: 16px;/* 1 rem = 20px  */
     font-family: 'krub', sans-serif;
-    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%););
+    /* background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);); */
+    background-color: #000000;
 }
 h1{
     font-size: 3.8 rem;
     text-decoration:underline;
+    color: white;
+    margin-top: 2rem;
 }
 h2 {
     font-size: 2.8 rem;
@@ -31,10 +35,10 @@ h1,h2,h3 {
 /* titulo */
 .titulo span {
     font-size: 2rem;
-    color: red;
+    color: yellow;
 }
 .boton {
-    background-color: blue;
+    background-color: black;
     color: aliceblue;
     padding: 1rem 3rem;
     margin-top: 2rem;
@@ -64,7 +68,7 @@ h1,h2,h3 {
     align-items: center;
 }
 .nav-bg {
-    background-color: lightseagreen;
+    background-color: #0F57D4;
 }
 .navegacion-principal a {
     color: white;
@@ -116,7 +120,7 @@ h1,h2,h3 {
     justify-content: center;
 }
 .contenido-hero h2, .contenido-hero p {
-    color: aliceblue;
+    color: grey;
 
 }
 .ubicacion {
@@ -136,8 +140,10 @@ background-color: white;
 padding: 2rem;
 border-radius: 2rem;
 }
-.servicios {
+.servicios, .navegacion-principal, .formulario, footer {
     margin: 5rem;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
 }
 @media (min-width: 768px) {
     .servicios {
@@ -157,7 +163,7 @@ border-radius: 2rem;
 
 }
 .servicio h3 {
-    color: aqua;
+    color: black;
     font-weight: 700;
 }
 .servicio p {
@@ -188,7 +194,7 @@ border-radius: 2rem;
     border: none;
 }
 .formulario legend {
-    color: aqua;
+    color: black;
     text-align: center;
     font-size: 1.8rem;
     text-transform: uppercase;
@@ -245,4 +251,9 @@ border-radius: 2rem;
     .w-sm-100 {
         width: auto;
     }
+}
+footer {
+    text-align: end;
+    color: white;
+    
 }
